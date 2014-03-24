@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.trs_bc1"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Sherlock.Light.DarkActionBar" >
+        <activity
+            android:name="com.example.trs_bc1.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.example.trs_bc1.LiveReservations"
+            android:label="@string/title_activity_live_reservations" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.trs_bc1.CustomReservationsActivity"
+            android:label="@string/title_activity_custom_reservations" >
+        </activity>
+        <activity
+            android:name="com.example.trs_bc1.SpecificDateReservations"
+            android:label="@string/title_activity_specific_date_reservations" >
+        </activity>
+        <activity
+            android:name="com.example.trs_bc1.MasterBookReservations"
+            android:label="@string/title_activity_master_book_reservations" >
+        </activity>
+        <activity
+            android:name="com.example.trs_bc1.MasterBookReservations2"
+            android:label="@string/title_activity_master_book_reservations2" >
+        </activity>
+        <activity
+            android:name="com.example.trs_bc1.MasterBookReservations3"
+            android:label="@string/title_activity_master_book_reservations3" >
+        </activity>
+        <activity
+            android:name="com.example.trs_bc1.MasterBookReservations4"
+            android:label="@string/title_activity_master_book_reservations4" >
+        </activity>
+    </application>
+
+</manifest>

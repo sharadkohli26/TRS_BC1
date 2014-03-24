@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/addguests"                    
+		android:title="@string/add_guests"
+		android:icon="@drawable/add_guests"
+		android:onClick="AddGuestsMenu"		
+		android:showAsAction="ifRoom|withText" />
+    <item android:id="@+id/default_occupancytime"                    
+		android:title="@string/occupancytime"		
+		android:onClick="ChangeDefaultOccupancyTime"		
+		android:showAsAction="withText" />
+    <item android:id="@+id/default_waitingtime"                    
+		android:title="@string/menu_waitingtime"		
+		android:onClick="ChangeDefaultWaitingTime"		
+		android:showAsAction="withText" />    
+	<item android:id="@+id/numtables"                    
+		android:title="@string/num_tables"
+		android:onClick="SetNumTables"		
+		android:showAsAction="withText" />      
+        
+    <item android:id="@+id/logout"                    
+		android:title="@string/logout"
+		android:onClick="MenuLogout"		
+		android:showAsAction="withText" />
+
+</menu>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?android:attr/spinnerDropDownItemStyle"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"    
+	android:gravity="center_vertical|left"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/nav_list_item_title"
+        style="?android:attr/spinnerDropDownItemStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"                               
+        android:ellipsize="end"  
+        android:textSize="18sp"                 
+        android:singleLine="true"
+        tools:ignore="SelectableText" />
+
+    <TextView
+        android:id="@+id/nav_list_item_subtitle"
+        style="?android:attr/spinnerDropDownItemStyle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"                                   
+    	android:ellipsize="end"
+        android:singleLine="true"                       
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        tools:ignore="SelectableText" />
+
+
+
+</LinearLayout>
+<!-- android:layout_height="?android:attr/dropdownListPreferredItemHeight" because its internal i swaw the value from theme file and wrote here ,android:layout_below="@+id/nav_list_item_title"-->

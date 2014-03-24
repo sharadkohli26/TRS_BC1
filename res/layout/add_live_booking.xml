@@ -1,0 +1,217 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/edit_num"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/crd_Head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5sp"
+        android:layout_marginLeft="5sp"
+        android:layout_marginRight="5sp"
+        android:layout_marginTop="5sp"
+        android:gravity="left"
+        android:text="@string/crd_Header"
+        android:textColor="@color/HoloBlue"
+        android:textIsSelectable="true"
+        android:textSize="22sp"
+        />
+    
+    <TextView
+        android:id="@+id/crd_Err"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:gravity="left"
+        android:visibility="gone"
+        android:textColor="@color/Red"        
+        android:textSize="12sp" />       
+    <View style="@style/ThickHoloBlueDividerHor" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/num_tables_header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:gravity="left"
+                android:text="@string/crd_num_tables_header"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/num_tables"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:gravity="left"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/num_guests_header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:gravity="left"
+                android:text="@string/crd_guests_header"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/num_guests"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:gravity="left"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/exp_occupancy_header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:gravity="left"
+                android:text="@string/crd_occupancy_header"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/exp_occupancy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:gravity="left"
+                android:hint="minutes"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/ThinGrayDividerHor" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/guest_name_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_marginTop="5sp"
+            android:gravity="left"
+            android:text="@string/crd_guest_name_header"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/guest_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:gravity="left"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View style="@style/ThinGrayDividerHor" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/guest_phone_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:layout_marginTop="5sp"
+            android:gravity="left"
+            android:text="@string/crd_guest_phone_header"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/guest_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:imeOptions="actionDone"
+            android:inputType="phone"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View style="@style/ThinGrayDividerHor" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/crd_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/textview_clickable_white_holoblue"
+            android:gravity="center"
+            android:padding="5sp"
+            android:text="@string/Cancel"
+            android:textSize="16sp" />
+
+        <View style="@style/GrayDividerVertical" />
+
+        <TextView
+            android:id="@+id/crd_set"
+            android:layout_width="fill_parent"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/textview_clickable_white_holoblue"
+            android:gravity="center"
+            android:padding="5sp"
+            android:text="@string/Set"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

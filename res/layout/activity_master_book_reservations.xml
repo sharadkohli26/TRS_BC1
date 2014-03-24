@@ -1,0 +1,446 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            style="@style/ThickHoloBlueDividerHor"
+            android:layout_width="match_parent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/mbr_waiting"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:background="@drawable/maintextview_selected"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="MBR_Waiting"
+                android:padding="5sp"
+                android:text="Waiting"
+                android:textAppearance="@style/MBR_TV_Selected" />
+
+            <View
+                style="@style/HoloBlueDividerVertical"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/mbr_advance"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/maintextview_notselected"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="MBR_Advance"
+                android:padding="5sp"
+                android:text="Advance"
+                android:textAppearance="@style/MBR_TV_NotSelected" />
+        </LinearLayout>
+
+        <View
+            style="@style/ThickHoloBlueDividerHor"
+            android:layout_width="match_parent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/mbr_tv_dateheader"
+                android:layout_width="90dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:padding="5sp"
+                android:text="Date"
+                android:textAppearance="@style/MBR_TV_fields" />
+
+            <View style="@style/GrayDividerVertical" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/mbr_img_datedec"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:clickable="true"
+                    android:contentDescription="Dec"
+                    android:gravity="center"
+                    android:onClick="Mbr_DateInc"
+                    android:padding="5sp"
+                    android:src="@drawable/holoblueleft_lightback" />
+
+                <TextView
+                    android:id="@+id/mbr_tv_date"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:padding="5sp"
+                    android:text="Saturday,4 December"
+                    android:textAppearance="@style/MBR_TV_fields" />
+
+                <ImageView
+                    android:id="@+id/mbr_img_dateinc"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight=".5"
+                    android:clickable="true"
+                    android:contentDescription="Inc"
+                    android:gravity="center"
+                    android:onClick="Mbr_DateInc"
+                    android:padding="5sp"
+                    android:src="@drawable/holoblueright_lightback" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/Divider" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/mbr_tv_timeheader"
+                android:layout_width="90dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="Time"
+                android:textAppearance="@style/MBR_TV_fields" />
+
+            <View style="@style/GrayDividerVertical" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/mbr_img_timehrinc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:contentDescription="Inc"
+                        android:gravity="center"
+                        android:onClick="Mbr_TimeHrInc"
+                        android:src="@drawable/holoblueup_lightback" />
+
+                    <TextView
+                        android:id="@+id/mbr_tv_timehr"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textAppearance="@style/MBR_TV_fields" />
+
+                    <ImageView
+                        android:id="@+id/mbr_img_timehrdec"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:contentDescription="Dec"
+                        android:gravity="center"
+                        android:onClick="Mbr_TimeHrDec"
+                        android:src="@drawable/holobluedown_lightback" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight=".25"
+                    android:baselineAligned="false"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/mbr_tv_timecolon"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text=":"
+                        android:textAppearance="@style/MBR_TV_fields" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/mbr_img_timemininc"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:contentDescription="Inc"
+                        android:gravity="center"
+                        android:onClick="Mbr_TimeMinInc"
+                        android:src="@drawable/holoblueup_lightback" />
+
+                    <TextView
+                        android:id="@+id/mbr_tv_timemin"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:text="30"
+                        android:textAppearance="@style/MBR_TV_fields" />
+
+                    <ImageView
+                        android:id="@+id/mbr_img_timemindec"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:contentDescription="Dec"
+                        android:gravity="center"
+                        android:onClick="Mbr_TimeMinDec"
+                        android:src="@drawable/holobluedown_lightback" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/mbr_tv_timeAMPM"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:text="AM"
+                        android:textAppearance="@style/MBR_TV_fields" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/Divider" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/num_tables_header"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginTop="5sp"
+                    android:gravity="left"
+                    android:text="@string/crd_num_tables_header"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/num_tables"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:gravity="left"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/num_guests_header"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginTop="5sp"
+                    android:gravity="left"
+                    android:text="@string/crd_guests_header"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/num_guests"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:gravity="left"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/exp_occupancy_header"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:layout_marginTop="5sp"
+                    android:gravity="left"
+                    android:text="@string/crd_occupancy_header"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/exp_occupancy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:gravity="left"
+                    android:hint="minutes"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/Divider" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/guest_name_header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:layout_marginTop="5sp"
+                android:gravity="left"
+                android:text="@string/crd_guest_name_header"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/guest_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginRight="5sp"
+                android:gravity="left"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View style="@style/Divider" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/guest_phone_header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5sp"
+                android:layout_marginTop="5sp"
+                android:gravity="left"
+                android:text="@string/crd_guest_phone_header"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/guest_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:imeOptions="actionDone"
+                android:inputType="phone"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            style="@style/ThickHoloBlueDividerHor"
+            android:layout_width="match_parent" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/crd_cancel"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:background="@drawable/textview_clickable_white_holoblue"
+                android:gravity="center"
+                android:padding="5sp"
+                android:text="@string/Cancel"
+                android:textSize="16sp" />
+
+            <View style="@style/GrayDividerVertical" />
+
+            <TextView
+                android:id="@+id/crd_set"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:background="@drawable/textview_clickable_white_holoblue"
+                android:gravity="center"
+                android:padding="5sp"
+                android:text="@string/Set"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            style="@style/ThickHoloBlueDividerHor"
+            android:layout_width="match_parent" />
+    </LinearLayout>
+
+</ScrollView>

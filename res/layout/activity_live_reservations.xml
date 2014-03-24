@@ -1,0 +1,360 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <View
+        style="@style/ThickHoloBlueDividerHor"
+        android:layout_width="match_parent" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/lr_lo_curr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/maintextview_selected"
+            android:clickable="true"
+            android:onClick="LO_Current"
+            android:orientation="vertical"
+            android:padding="3sp" >
+
+            <TextView
+                android:id="@+id/lr_tv_current"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Current"
+                android:textAppearance="@style/MainTextViewSelected" />
+
+            <TextView
+                android:id="@+id/lr_tv_curr_update"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0 | Duration"
+                android:textAppearance="@style/SubTextViewSelected" />
+        </LinearLayout>
+
+        <View style="@style/HoloBlueDividerVertical" />
+
+        <LinearLayout
+            android:id="@+id/lr_lo_wait"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/maintextview_notselected"
+            android:clickable="true"
+            android:onClick="LO_Wait"
+            android:orientation="vertical"
+            android:padding="3sp" >
+
+            <TextView
+                android:id="@+id/lr_tv_wait"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Waiting"
+                android:textAppearance="@style/MainTextViewNotSelected" />
+
+            <TextView
+                android:id="@+id/lr_tv_wait_update"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0 | Wait Time"
+                android:textAppearance="@style/MainTextViewNotSelected" />
+        </LinearLayout>
+
+        <View
+            style="@style/HoloBlueDividerVertical"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:id="@+id/lr_lo_advance"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/maintextview_notselected"
+            android:clickable="true"
+            android:onClick="LO_Advance"
+            android:orientation="vertical"
+            android:padding="2sp" >
+
+            <TextView
+                android:id="@+id/lr_tv_advance"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Advance"
+                android:textAppearance="@style/MainTextViewNotSelected" />
+
+            <TextView
+                android:id="@+id/lr_tv_advance_update"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textAppearance="@style/MainTextViewNotSelected" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/ThickHoloBlueDividerHor" />
+
+    <TextView
+        android:id="@+id/lr_tv_dummytext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Hi hello"
+        android:textColor="@color/Red"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/lr_rl_ll_listviews"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/lr_closedres_outsidell"
+            android:layout_alignParentTop="True"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/lrc_listview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:stackFromBottom="false"
+                android:visibility="visible"
+                tools:listitem="@layout/lr_currres_listviews_rows2" />
+
+            <GridView
+                android:id="@+id/lrc_gridview"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:columnWidth="150dp"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp"
+                android:visibility="gone"
+                tools:listitem="@layout/lr_curres_gridview_cell" >
+
+            </GridView>
+          
+
+            <TextView
+                android:id="@+id/rl_ll_showclosed"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/holoblueonclick_tv"
+                android:clickable="true"
+                android:drawableLeft="@drawable/holobluedown_lightback"
+                android:gravity="center_vertical"
+                android:onClick="ShowClosedReservations_TV"
+                android:padding="3sp"
+                android:text="Closed Reservations"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/lrc_lv_closed"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:stackFromBottom="false"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/lr_closedres_outsidell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lr_hbd_bottombox"
+            android:background="@drawable/holoblueonclick_tv"
+            android:clickable="true"
+            android:drawableLeft="@drawable/holoblueright_lightback"
+            android:gravity="left"
+            android:onClick="ShowClosedReservations_LV"
+            android:padding="4sp"
+            android:text="Closed Reservations"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/lr_hbd_bottombox"
+            style="@style/ThickHoloBlueDividerHor"
+            android:layout_width="match_parent"
+            android:layout_above="@+id/lr_bottombox"
+            android:layout_alignParentLeft="true" />
+
+        <LinearLayout
+            android:id="@+id/lr_bottombox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rl_bottombox"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/lr_bottombox_addguest"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rl_bottombox"
+                android:baselineAligned="false"
+                android:clickable="true"
+                android:onClick="AddGuestsView"
+                android:orientation="vertical"
+                android:padding="3sp" >
+
+                <ImageView
+                    android:id="@+id/rl__image_addguest"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:contentDescription="Add Guest"
+                    android:gravity="center"
+                    android:src="@drawable/blackaddguest_lightback" />
+
+                <TextView
+                    android:id="@+id/rl_tv_addguest"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Quick Add"
+                    android:textAppearance="@style/RL_TV_Text" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lr_addguest_vertsep"
+                style="@style/HoloBlueDividerVertical"
+                android:layout_height="fill_parent" />
+
+            <LinearLayout
+                android:id="@+id/lr_bottombox_waitlist"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rl_bottombox"
+                android:baselineAligned="false"
+                android:clickable="true"
+                android:onClick="LR_AddWait"
+                android:orientation="vertical"
+                android:padding="3sp" >
+
+                <ImageView
+                    android:id="@+id/rl__image_waitlist"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:contentDescription="Waiting"
+                    android:gravity="center"
+                    android:src="@drawable/blackwait_lightback" />
+
+                <TextView
+                    android:id="@+id/rl_tv_waitlist"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Waiting List"
+                    android:textAppearance="@style/RL_TV_Text"
+                    android:textColor="@color/sysBlack" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lr_waitguest_vertsep"
+                style="@style/HoloBlueDividerVertical"
+                android:layout_height="fill_parent" />
+
+            <LinearLayout
+                android:id="@+id/lr_bottombox_advlist"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rl_bottombox"
+                android:baselineAligned="false"
+                android:clickable="true"
+                android:onClick="LR_AddAdvance"
+                android:orientation="vertical"
+                android:padding="3sp" >
+
+                <ImageView
+                    android:id="@+id/rl__image_advlist"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:contentDescription="Advance"
+                    android:gravity="center"
+                    android:src="@drawable/blackadvanced_lightback" />
+
+                <TextView
+                    android:id="@+id/rl_tv_advlist"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Advance Booking"
+                    android:textAppearance="@style/RL_TV_Text"
+                    android:textColor="@color/sysBlack" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lr_advguest_vertsep"
+                style="@style/HoloBlueDividerVertical" />
+
+            <LinearLayout
+                android:id="@+id/lr_bottombox_listgridview"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rl_bottombox"
+                android:baselineAligned="false"
+                android:clickable="true"
+                android:onClick="ShowGridView"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="3sp" >
+
+                <ImageView
+                    android:id="@+id/rl__image_listgridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:contentDescription="Advance"
+                    android:gravity="center"
+                    android:src="@drawable/blackgridview_lightback" />
+
+                <TextView
+                    android:id="@+id/rl_tv_listgridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Grid View"
+                    android:textAppearance="@style/RL_TV_Text"
+                    android:textColor="@color/sysBlack" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="LR_Title">
+       <item>Today\'s Reservations</item>
+        <item>Set Date</item>
+    </string-array>
+    <string-array name="CR_Title">
+        <item>Reservations</item>
+        <item>Today\'s Reservations</item>
+        <item>Set Date</item>        
+    </string-array>
+
+    <!--
+         <string-array name="LR_SubTitle">
+        <item>Today</item>        
+        <item>Set date</item>
+    </string-array>
+    -->
+
+</resources>

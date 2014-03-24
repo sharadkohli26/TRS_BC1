@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lr_curr_lv_NumTables"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/LR_Curr_LV_Row" />
+
+        <TextView
+            android:id="@+id/lr_curr_lv_NumTablesHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="left|bottom"
+            android:paddingRight="4sp"
+            android:text="@string/lr_curr_lvrow_Table"
+            android:textAppearance="@style/LR_Curr_LV_SubRow" />
+
+        <View
+            style="@style/GrayDividerVertical"
+            android:layout_height="40dip" />
+
+        <TextView
+            android:id="@+id/lr_curr_lv_NumGuests"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/LR_Curr_LV_Row" />
+
+        <TextView
+            android:id="@+id/lr_curr_lv_NumGuestsHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="left|bottom"
+            android:paddingRight="4sp"
+            android:text="@string/lr_curr_lvrow_Guest"
+            android:textAppearance="@style/LR_Curr_LV_SubRow" />
+
+        <View style="@style/GrayDividerVertical" />
+
+        <TextView
+            android:id="@+id/lr_curr_lv_StartTime"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textAppearance="@style/LR_Curr_LV_Row" />
+    </LinearLayout>
+
+    <View style="@style/ThinGrayDividerHor" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/lr_curr_lv_GuestName"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/whiteback_greenphone"
+            android:gravity="center"
+            android:textAppearance="@style/LR_Curr_LV_Row" />
+
+        <TextView
+            android:id="@+id/lr_curr_lv_ContactNo"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/LR_Curr_LV_SubRow"
+            android:visibility="gone" />
+
+        <View
+            style="@style/GrayDividerVertical"
+            android:layout_height="50dip" />
+
+        <TextView
+            android:id="@+id/lr_curr_lv_TimeElapsed"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="@style/LR_Curr_LV_Row" />
+    </LinearLayout>
+
+</LinearLayout>

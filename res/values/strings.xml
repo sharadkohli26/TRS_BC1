@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name"></string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="login_email">Id</string>
+    <string name="login_pass">Password</string>
+    <string name="login_submit">Login</string>
+    <string name="login_network_error">Could not connect to server!!</string>
+    <string name="login_auth_error">Invalid Email or Password!!</string>
+    <string name="login_blank_id">Id field is blank!!</string>
+    <string name="login_blank_password">Password field is blank</string>
+    <string name="title_activity_live_reservations">LR</string>
+    <string name="logout">Logout</string>
+    <string name="occupancytime">Duration</string>
+    <string name="menu_waitingtime">Wait Time</string>
+    <string name="viewing_date">ViewDate</string>
+    <string name="num_tables">Tables</string>
+    <string name="add_guests">Add</string>
+    <string name="lr_actionbar_title">Live Reservations</string>
+    <string name="lr_noreservations">No Reservations yet.</string>    
+    <string name="crd_Header">Current Reservation</string>
+    <string name="crd_err_tablesblank">Number of Tables is blank</string>
+    <string name="crd_err_numtables_exceedmaxtables">Tables exceeds max number of tables</string>
+    <string name="crd_num_tables_header">Tables*</string>
+    <string name="crd_guests_header">Guests*</string>
+    <string name="crd_occupancy_header">Duration(m)</string>
+    <string name="crd_guest_name_header">Name</string>
+    <string name="crd_guest_phone_header">Contact</string>
+    <string name="title_activity_custom_reservations">CustomReservationsActivity</string>
+    <string name="title_activity_specific_date_reservations">SpecificDateReservations</string>
+    <string name="Set">Set</string>
+    <string name="Cancel">Cancel</string>
+    <string name="mbr_header_waiting">Waiting</string>
+    <string name="mbr_header_advance">Advance</string>
+    <string name="mbr_waitingtimeheader">Waiting</string>
+    <string name="mbr_waitingtimehint">Wait Time(m)</string>
+    <string name="mbr_durationheader">Duration</string>
+    <string name="mbr_durationhint">Duration(m)</string>
+	<string name="mbr_reservationheader">Reservation For</string>
+	<string name="mbr_dateheader">Date</string>
+	<string name="mbr_tablehint">No. of Tables</string>
+	<string name="mbr_tableheader">Tables</string>
+	<string name="mbr_guests_header">Guests</string>
+	<string name="mbr_guestshint">"No. of Guests"</string>
+	<string name="mbr_guestname_header">Name</string>
+	<string name="mbr_guestname_hint">Name of Guests</string>
+	<string name="mbr_guest_phone_header">Contact</string>
+	<string name="mbr_guest_phone_hint">Contact No(s).</string>
+	<string name="mbr_set">Set</string>
+	<string name="mbr_cancel">Cancel</string>
+	<string name="lr_curr_lvrow_Tables">Tables</string>
+	<string name="lr_curr_lvrow_Table">Table</string>
+	<string name="lr_curr_lvrow_Guests">Guests</string>
+	<string name="lr_curr_lvrow_Guest">Guest</string>
+    
+    <string name="title_activity_master_book_reservations">Reservations</string>
+    <string name="title_activity_master_book_reservations2">Reservations</string>
+    <string name="title_activity_master_book_reservations3">Reservations</string>
+    <string name="title_activity_master_book_reservations4">Reservations</string>
+
+</resources>

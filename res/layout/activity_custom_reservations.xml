@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <View
+        style="@style/ThickHoloBlueDividerHor"
+        android:layout_width="match_parent" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/sdr_ll_final"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/maintextview_selected"
+            android:clickable="true"
+            android:onClick="LO_Current"
+            android:orientation="vertical"
+            android:padding="3sp" >
+
+            <TextView
+                android:id="@+id/sdr_tv_final"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Current"
+                android:textAppearance="@style/MainTextViewSelected" />
+
+            <TextView
+                android:id="@+id/sdr_tv_final_update"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textAppearance="@style/SubTextViewSelected" />
+        </LinearLayout>
+
+        <View style="@style/HoloBlueDividerVertical" />
+
+        <LinearLayout
+            android:id="@+id/sdr_ll_wait"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/maintextview_notselected"
+            android:clickable="true"
+            android:onClick="LO_Wait"
+            android:orientation="vertical"
+            android:padding="3sp" >
+
+            <TextView
+                android:id="@+id/sdr_tv_wait"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Waiting"
+                android:textAppearance="@style/MainTextViewNotSelected" />
+
+            <TextView
+                android:id="@+id/sdr_tv_wait_update"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textAppearance="@style/MainTextViewNotSelected" />
+        </LinearLayout>
+
+        <View
+            style="@style/HoloBlueDividerVertical"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:id="@+id/sdr_ll_advance"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/maintextview_notselected"
+            android:clickable="true"
+            android:onClick="LO_Advance"
+            android:orientation="vertical"
+            android:padding="2sp" >
+
+            <TextView
+                android:id="@+id/sdr_tv_advance"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Advance"
+                android:textAppearance="@style/MainTextViewNotSelected" />
+
+            <TextView
+                android:id="@+id/sdr_tv_advance_update"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0"
+                android:textAppearance="@style/MainTextViewNotSelected" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/ThickHoloBlueDividerHor" />
+
+    <TextView
+        android:id="@+id/sdr_tv_dummytext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="Hi hello"
+        android:textColor="@color/Red"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/sdr_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"        
+        android:divider="@color/holo_blue_light"
+        android:dividerHeight="3dp"
+        android:stackFromBottom="false"        
+        tools:listitem="@layout/lr_currres_listviews_rows2" />
+
+</LinearLayout>
